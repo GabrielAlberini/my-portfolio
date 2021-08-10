@@ -1,0 +1,51 @@
+/*MAIN HOME*/
+
+.align-item-center {
+    align-items: center;
+}
+
+.home-section .full-screen{
+    display: flex;
+    padding: 50px 0;
+    min-height: 100vh;
+    .home-text,
+    .home-img {
+        flex: 2;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+    .home-text {
+        p{
+            color: $text-black-700;
+            font-size: 18px;
+            text-transform: capitalize;
+        } 
+        h2{
+            font-size: 55px;
+            font-weight: 700;
+            color: $text-black-900;
+            margin: 0;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: 500;
+            color: $text-black-700;
+            margin: 0;
+        }
+    }
+    .img-box {
+        max-width: 450px;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        object-fit:cover;
+        object-position: center center;
+
+    }
+    img {
+        width: 100%;
+        border-radius: 50%;
+        border: 10px solid transparent;
+    }
+}

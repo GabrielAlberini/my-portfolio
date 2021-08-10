@@ -1,11 +1,14 @@
 // Elements
 
-@import "parcials/botons";
 @import "parcials/colors";
+@import "parcials/botons";
 @import "parcials/typography";
+@import "parcials/shadows";
+@import "parcials/effect";
 
 //Content
 
+@import "parcials/body";
 @import "parcials/header";
 @import "parcials/main";
 @import "parcials/footer";

@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: $typographieTxt;
+}
+
+h1, h2 {
+    font-family: $typographieTitle;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: $bg-black-50;
+}
+
+/*BODY ELEMENTS*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
