@@ -2,9 +2,23 @@
 
 /*BUTTON HOME*/
 
-.btn-1 {
+%button1 {
     padding: 10px 25px;
+    font-size: 16px;
     margin-top: 30px;
+    font-weight: 500;
+    color: $colorPrimario;
+    background-color: transparent;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+%button2 {
+    margin-top: 10px;
+    padding: 10px 25px;
     font-size: 16px;
     font-weight: 500;
     color: $colorPrimario;
@@ -15,3 +29,17 @@
     border-radius: 30px;
     display: inline-block;
 }
+
+.btn-1 {
+    @extend %button1;
+    transition: all .3s ease; //Ver que pasa que no se incorpora en estos botones
+}
+
+.btn-2 {
+    @extend %button2;
+    transition: all .3s ease;
+    &:hover {
+        color: $colorCuarto;
+    }
+}
+
