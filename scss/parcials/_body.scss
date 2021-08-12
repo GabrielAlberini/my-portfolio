@@ -38,3 +38,8 @@ img {
     max-width: 1140px;
     margin: auto;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}

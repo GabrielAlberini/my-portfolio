@@ -1,3 +1,16 @@
+.bg-img {
+  background-image: url(https://img.freepik.com/foto-gratis/espacio-diseno-papel-textura-fondo_53876-42312.jpg?size=626&ext=jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+  opacity: 0.5;
+}
+
 /*Colores*/
 /*Ni idea*/
 /*BUTTONS*/
@@ -198,6 +211,11 @@ img {
   margin: auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*HEADER*/
 .header {
   padding: 20px 15px;
@@ -374,7 +392,7 @@ img {
 
 /*ABOUTME*/
 .about-section {
-  padding: 80px 0 80px;
+  padding: 60px 0 80px;
   min-height: 100vh;
 }
 .about-section .section-title {
@@ -447,18 +465,146 @@ img {
 }
 .about-section .about-tabs {
   padding: 60px 15px 50px;
-  flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
 }
-.about-section .about-tabs .tab-items {
+.about-section .about-tabs h3 {
   display: inline-block;
-  margin: 0 5px 10px;
-  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  border-bottom: 2px solid #F2A341;
+}
+
+/*SECTION SKILLS*/
+.section-skills {
+  padding: 60px 0 80px;
+  min-height: 100vh;
+}
+.section-skills .about-tabs {
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-skills .about-tabs h3 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  border-bottom: 2px solid #F2A341;
+  text-transform: uppercase;
+}
+.section-skills .about-tabs h3::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #F2A341;
+  text-align: center;
+}
+.section-skills .tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 80px;
+  /*COLORS ICONS SKILL*/
+}
+.section-skills .tab-content .skill-item {
+  flex: 0 0 50%;
+  max-width: 40%;
+  padding: 30px 20px;
+  margin: auto;
+}
+.section-skills .tab-content .skill-item .ico-logo {
+  font-size: 25px;
+  padding: 5px;
+}
+.section-skills .tab-content .skill-item p {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #666666;
   text-transform: capitalize;
 }
-.about-section .about-tabs .active {
+.section-skills .tab-content .skill-item .progress {
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.section-skills .tab-content .skill-item .progress .progress-bar {
+  background-color: #666666;
+  height: 6px;
+  left: 7px;
+  top: 7px;
+  position: absolute;
+  border-radius: 10px;
+}
+.section-skills .tab-content .skill-item .progress span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+  margin-top: -30px;
+}
+.section-skills .tab-content .ico-html {
+  color: #ec5b24;
+}
+.section-skills .tab-content .ico-css {
+  color: #1572b6;
+}
+.section-skills .tab-content .ico-js {
+  color: #f7e018;
+}
+.section-skills .tab-content .ico-sass {
+  color: #d56ea3;
+}
+.section-skills .tab-content .ico-bt {
+  color: #8d0bfd;
+}
+.section-skills .tab-content .ico-gh {
+  color: #062738;
+}
+
+/*SECTION SERVICES*/
+.section-services {
+  padding: 60px 0 80px;
+  min-height: 100vh;
+}
+.section-services .cont__title-services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-services .cont__title-services h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-services .cont__title-services h2::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
   color: #F2A341;
+  text-align: center;
+}
+.section-services .service-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 80px;
+}
+.section-services .service-item .service-item-iner {
+  flex: 0 0 50%;
+  max-width: 40%;
+  padding: 30px 20px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

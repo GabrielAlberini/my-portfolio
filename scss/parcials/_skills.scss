@@ -1,0 +1,93 @@
+/*SECTION SKILLS*/
+
+.section-skills {
+    padding: 60px 0 80px;
+    min-height: 100vh;
+    .about-tabs {
+        padding: 0 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 700;
+            color: $text-black-900;
+            margin: 0;
+            border-bottom: 2px solid $colorCuarto;
+            text-transform: uppercase;
+            &::before {
+                content: attr(data-heading);
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: $colorCuarto;
+                text-align: center;
+            }
+        }
+    }
+    .tab-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 80px;
+        .skill-item {
+            flex: 0 0 50%;
+            max-width: 40%;
+            padding: 30px 20px;
+            margin: auto;
+            .ico-logo {
+                font-size: 25px;
+                padding: 5px;
+            }
+            p {
+                padding-bottom: 10px;
+                font-size: 16px;
+                color: $text-black-600;
+                text-transform: capitalize;
+            }
+            .progress {
+                height: 20px;
+                border-radius: 10px;
+                position: relative;
+                .progress-bar {
+                    background-color: $text-black-600;
+                    height: 6px;
+                    left: 7px;
+                    top: 7px;
+                    position: absolute;
+                    border-radius: 10px;
+                }
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $text-black-600;
+                    margin-top: -30px;
+                }
+            }
+        }  
+        /*COLORS ICONS SKILL*/
+        
+        .ico-html {
+            color: rgb(236,91,36);
+        } 
+        .ico-css {
+            color: rgb(21,114,182);
+        }    
+        .ico-js {
+            color: rgb(247,224,24);
+        } 
+        .ico-sass {
+            color: rgb(213,110, 163);
+        }    
+        .ico-bt {
+            color: rgb(141,11,253);
+        }  
+        .ico-gh {
+            color: rgb(6,39,56);
+        }                
+    }
+}

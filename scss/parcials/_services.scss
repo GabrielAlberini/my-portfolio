@@ -1,0 +1,39 @@
+/*SECTION SERVICES*/
+
+.section-services{
+    padding: 60px 0 80px;
+    min-height: 100vh;
+    .cont__title-services{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 700;
+            color: $text-black-900;
+            text-transform: uppercase;
+            margin: 0;
+            &::before {
+                content: attr(data-heading);
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: $colorCuarto;
+                text-align: center;
+            }
+        }
+    }  
+    .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 80px;
+        .service-item-iner {
+            flex: 0 0 50%;
+            max-width: 40%;
+            padding: 30px 20px;
+            margin: auto;
+        }
+    }
+}

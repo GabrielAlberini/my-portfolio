@@ -1,5 +1,6 @@
 // Elements
 
+@import "parcials/bg-img";
 @import "parcials/colors";
 @import "parcials/botons";
 @import "parcials/typography";
@@ -8,8 +9,12 @@
 
 //Content
 
+
 @import "parcials/body";
 @import "parcials/header";
 @import "parcials/main";
 @import "parcials/footer";
 @import "parcials/aboutme";
+@import "parcials/skills";
+@import "parcials/services";
+
