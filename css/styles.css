@@ -171,6 +171,29 @@
   background-color: #4dd0e1;
 }
 
+.section-title {
+  padding: 0 15px;
+  flex: 2;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-title h2::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #F2A341;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -188,6 +211,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background-color: #eff0f4;
+  overflow-y: hidden;
 }
 
 /*BODY ELEMENTS*/
@@ -395,28 +419,6 @@ img {
   padding: 60px 0 80px;
   min-height: 100vh;
 }
-.about-section .section-title {
-  padding: 0 15px;
-  flex: 2;
-  max-width: 100%;
-  text-align: center;
-  margin-bottom: 60px;
-}
-.about-section .section-title h2 {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0;
-}
-.about-section .section-title h2::before {
-  content: attr(data-heading);
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  color: #F2A341;
-}
 .about-section .cont__about {
   display: flex;
 }
@@ -566,6 +568,223 @@ img {
 }
 .section-skills .tab-content .ico-gh {
   color: #062738;
+}
+
+.service-section {
+  padding: 80px 0 80px 0;
+  min-height: 100vh;
+}
+.service-section .service-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-section .service-item .service-item-inner {
+  padding: 50px 15px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 2;
+  width: 100%;
+}
+.service-section .service-item .service-item-inner:hover .ico-1 {
+  color: #f48fb1;
+  font-size: 30px;
+}
+.service-section .service-item .service-item-inner:hover .ico-2 {
+  color: #90caf9;
+  font-size: 30px;
+}
+.service-section .service-item .service-item-inner:hover .ico-3 {
+  color: #80cbc4;
+  font-size: 30px;
+}
+.service-section .service-item .service-item-inner:hover .ico-4 {
+  color: #dce775;
+  font-size: 30px;
+}
+.service-section .service-item .service-item-inner:hover .ico-5 {
+  color: #ffb74d;
+  font-size: 30px;
+}
+.service-section .service-item .service-item-inner:hover .ico-6 {
+  color: #bdbdbd;
+  font-size: 30px;
+}
+.service-section .service-item .icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.service-section .service-item .icon i {
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+.service-section .service-item h3 {
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #555555;
+  text-transform: capitalize;
+}
+.service-section .service-item p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 26px;
+}
+
+.portfolio-section {
+  padding: 80px 0 80px 0;
+  min-height: 100vh;
+}
+.portfolio-section .section-title {
+  margin-bottom: 40px;
+}
+.portfolio-section .portfolio-filter {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.portfolio-section .portfolio-filter .filter-item {
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666666;
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.portfolio-section .portfolio-filter .filter-item:hover:not(.active) {
+  opacity: 0.6;
+}
+.portfolio-section .portfolio-filter .active {
+  color: #F2A341;
+}
+.portfolio-section .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-section .portfolio-item .porfolio-item-inner {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.portfolio-section .portfolio-item .porfolio-item-inner p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: #666666;
+  text-transform: capitalize;
+}
+.portfolio-section .portfolio-item .porfolio-item-inner:hover .view-project {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.portfolio-section .portfolio-item .porfolio-item-inner:hover img {
+  transform: translateY(-25px);
+}
+.portfolio-section .portfolio-item .portfolio-item-details {
+  display: none;
+}
+.portfolio-section .portfolio-item img {
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.portfolio-section .portfolio-item .portfolio-item-img {
+  position: relative;
+}
+.portfolio-section .portfolio-item .portfolio-item-img .view-project {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #F2A341;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transform: translateY(-5px);
+  z-index: -1;
+  opacity: 0;
+}
+
+/*PORTFOLIO POPUP*/
+.portfolio-popup {
+  background-color: #eff0f4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.portfolio-popup .pp-main {
+  min-height: 100vh;
+  max-width: 1350px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.portfolio-popup .pp-main .pp-main-inner {
+  padding: 70px 0 50px;
+}
+.portfolio-popup .pp-main .pp-img {
+  max-width: 700px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.portfolio-popup .pp-project-details-btn {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #F2A341;
+}
+.portfolio-popup .pp-close {
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-size: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  color: #666666;
+}
+.portfolio-popup .pp-counter {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  bottom: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

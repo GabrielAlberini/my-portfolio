@@ -1,0 +1,72 @@
+.service-section {
+    padding: 80px 0 80px 0;
+    min-height: 100vh;
+    .service-item {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 15px;  
+        display: flex;
+        flex-wrap: wrap;
+        .service-item-inner {
+            padding: 50px 15px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 2;
+            width: 100%;
+            &:hover {
+                .ico-1 {
+                    color: #f48fb1;
+                    font-size: 30px;
+                }
+                .ico-2 {
+                    color: #90caf9;
+                    font-size: 30px;
+                }
+                .ico-3 {
+                    color: #80cbc4;
+                    font-size: 30px;
+                }
+                .ico-4 {
+                    color:#dce775;
+                    font-size: 30px;
+                }
+                .ico-5 {
+                    color:#ffb74d;
+                    font-size: 30px;
+                }
+                .ico-6 {
+                    color:#bdbdbd;
+                    font-size: 30px;
+                }
+            }
+        }
+        .icon {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            position: relative;
+            i {
+                font-size: 25px;
+                transition: all 0.3s ease;                
+            }
+        }
+        h3 {
+            margin: 15px 0 15px 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: $text-black-700;
+            text-transform: capitalize;
+        }
+        p {
+            font-size: 16px;
+            color: $text-black-600;
+            line-height: 26px;
+        }
+    }
+}
+
