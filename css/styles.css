@@ -1,5 +1,5 @@
 .bg-img {
-  background-image: url(https://img.freepik.com/foto-gratis/espacio-diseno-papel-textura-fondo_53876-42312.jpg?size=626&ext=jpg);
+  background-image: url();
   position: fixed;
   top: 0;
   left: 0;
@@ -579,6 +579,10 @@ img {
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+.service-section .service-item:hover {
+  transform: scale(1.019);
 }
 .service-section .service-item .service-item-inner {
   padding: 50px 15px;
@@ -697,7 +701,7 @@ img {
 .portfolio-section .portfolio-item .porfolio-item-inner:hover img {
   transform: translateY(-25px);
 }
-.portfolio-section .portfolio-item .portfolio-item-details {
+.portfolio-section .portfolio-item .pp-portfolio-item-details {
   display: none;
 }
 .portfolio-section .portfolio-item img {
@@ -720,6 +724,13 @@ img {
   transform: translateY(-5px);
   z-index: -1;
   opacity: 0;
+}
+.portfolio-section .portfolio-item .hide {
+  display: none;
+}
+.portfolio-section .portfolio-item .show {
+  display: block;
+  animation: fadeInTop 0.5s ease;
 }
 
 /*PORTFOLIO POPUP*/
