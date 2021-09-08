@@ -17,6 +17,10 @@ body {
     background-color: $bg-black-50;
 }
 
+.stop-scrolling {
+    overflow-y: hidden;
+}
+
 /*BODY ELEMENTS*/
 
 a {
