@@ -43,10 +43,11 @@ function bodyScrollingToggle(){
                         itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
                         screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");        
                         /* convert screenshots into array */
-                        screenshots = screenshots.split(",");   
-                        slideIndex = 0;
+                        screenshots = screenshots.split(',');
+                        slideIndex = 0; 
                         popupToggle();
-                        popupSlideshow();       
+                        popupSlideshow();     
+                         
                 }
         })
 
@@ -64,5 +65,6 @@ function bodyScrollingToggle(){
                 const popupImg = popup.querySelector(".pp-img");
                 /*activate loader until the popupImg loaded*/
                 popupImg.src=imgSrc;
+                popup.querySelector(".pp-counter").innerHTML = (slideIndex + 1) + " of " + screenshots.length;
         }
 })();

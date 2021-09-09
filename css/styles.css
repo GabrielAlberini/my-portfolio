@@ -749,7 +749,6 @@ img {
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
-  transform: all 2s ease;
 }
 .portfolio-popup .pp-details {
   max-width: 1350px;
